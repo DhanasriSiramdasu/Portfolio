@@ -1,0 +1,72 @@
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2.5em;
+    color:white;
+}
+img{
+    margin:20px;
+    border-radius:50%;
+    height:55px;
+    width:55px;
+}
+.skills-container{
+  position: relative;
+  height: 600px;   /* increased height */
+  width: 1000px;   /* increased width */
+  margin: auto;
+  border: 2px solid #444;
+  overflow: hidden;
+  border-radius: 12px;
+  pointer-events:none;
+}
+
+/* icons start in center */
+
+.skill-icon{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  transition: transform 2s ease;
+}
+
+.skill-icon.spread{
+  transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
+}
+
+.skill-icon.float{
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+/* spread to random places */
+
+.skill-icon.spread{
+  transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
+}
+
+/* floating animation */
+
+.skill-icon.float{
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+@keyframes float{
+
+  0%{
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
+  }
+
+  50%{
+    transform: translate(calc(-50% + var(--x) + 15px), calc(-50% + var(--y) - 15px));
+  }
+
+  100%{
+    transform: translate(calc(-50% + var(--x) - 10px), calc(-50% + var(--y) + 10px));
+  }
+
+}
