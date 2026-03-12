@@ -1,0 +1,45 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --card-bg: #f5f5f5;
+  --nav-text: #111827;   /* dark text for light mode */
+}
+
+/* Dark mode */
+.dark-mode {
+  --bg-color: #0f172a;
+  --text-color: #ffffff;
+  --card-bg: #1e293b;
+  --nav-text: #ffffff;   /* white text for dark mode */
+}
+
+.github-section{
+  text-align:center;
+}
+
+.github-section h2{
+  font-size:2rem;
+  margin-bottom:40px;
+  color: var(--text-color);
+}
+
+.github-stats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.github-stats img{
+  width: 650px;      /* bigger cards */
+  max-width: 48%;    /* keeps them side by side */
+  height: auto;
+  border-radius: 10px;
+}
+
+.github-stats img:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
+}

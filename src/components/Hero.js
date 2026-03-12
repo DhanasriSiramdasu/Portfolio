@@ -11,8 +11,12 @@ export class Hero extends Component {
         <div className="about-container" id="home">
           <div className="content box">
             <h1 className="about-title">Hi, I'm Dhanasri Siramdasu</h1>
-            <h3 className="about-subtitle">Software Engineer</h3>
-            <p className="about-text">Building software that powers innovation and drives impact</p>
+            <h3 className="about-subtitle">Software Developer | ML Enthusiast</h3>
+            <p className="about-text">Crafting intelligent software and data-driven solutions that create meaningful impact.</p>
+            <div className="hero-buttons">
+              <a href="#projects" className="project-btn">View My Projects</a>
+              <a href="/Dhanasri_Siramdasu_Resume.pdf" download className="resume-btn">Download Resume</a>
+            </div>
             <div className="images">
               <a href="https://www.linkedin.com/in/dhanasrisiramdasu/" target="_blank" rel="noopener noreferrer">
                 <img src={linkedinIcon} alt="linkedinicon" className="icons" />
