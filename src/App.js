@@ -12,10 +12,10 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Projects />
-      <Github />
       <Skills />
+      <Projects />
       <EducationTimeline />
+      <Github />
       <Contact />
     </>
   );
